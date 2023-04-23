@@ -5,7 +5,8 @@
 
 import pyfiglet
 import time
-
+# Defining variable
+intro = pyfiglet.figlet_format("WELCOME".center(39, "="), font = "digital")
 # Open the input file and read the numbers
 with open("integers.txt", "r") as input_file:
     numbers = input_file.readlines()
