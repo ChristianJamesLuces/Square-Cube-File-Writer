@@ -23,11 +23,9 @@ even_numbers = [num for num in numbers if num % 2 == 0]
 odd_numbers = [num for num in numbers if num % 2 != 0]
 
 with open("double.txt", "w") as double_file, open("triple.txt", "w") as triple_file:
-    double_file.write("These are the squares of all even integers in the file:" + "\n")
     # Write the squares of even numbers to double.txt
     for num in even_numbers:
         numbers = double_file.write(str(num**2) + "\n")
-    triple_file.write("These are the cubes of all odd integers in the file:" + "\n")
     # Write the cubes of odd number to odd.txt
     for num in odd_numbers:
         numbers = triple_file.write(str(num**3) + "\n")
