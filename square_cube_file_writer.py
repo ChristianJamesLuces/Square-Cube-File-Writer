@@ -9,9 +9,12 @@ with open("integers.txt", "r") as input_file:
     numbers = input_file.readlines()
 # Convert the numbers to integers
 numbers = [int(num) for num in numbers]
-# Extract even and odd numbers
-even_numbers = [num for num in numbers if num % 2 == 0]
-odd_numbers = [num for num in numbers if num % 2 != 0]
-# Write the squares of even numbers to double.txt
+
+with open("dounble.txt", "w") as double_file, open("triple.txt", "w") as triple_file:
+    double_file.("These are the squares of all even integers in the file:" + "\n")
+    # Write the squares of even numbers to double.txt
+    for num in numbers:
+        if num % 2 == 0:
+            numbers = double_file.write(str(num**2) + "\n")
 # Write the cubes odd number to odd.txt
 # Display the confirmation message
