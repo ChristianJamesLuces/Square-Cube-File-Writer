@@ -10,6 +10,8 @@ with open("integers.txt", "r") as input_file:
 # Convert the numbers to integers
 numbers = [int(num) for num in numbers]
 # Extract even and odd numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+odd_numbers = [num for num in numbers if num % 2 != 0]
 # Write the squares of even numbers to double.txt
 # Write the cubes odd number to odd.txt
 # Display the confirmation message
