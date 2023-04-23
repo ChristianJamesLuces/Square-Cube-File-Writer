@@ -16,5 +16,8 @@ with open("dounble.txt", "w") as double_file, open("triple.txt", "w") as triple_
     for num in numbers:
         if num % 2 == 0:
             numbers = double_file.write(str(num**2) + "\n")
-# Write the cubes odd number to odd.txt
+    # Write the cubes of odd number to odd.txt
+    for num in numbers:
+        if num % 2 != 0:
+            numbers = triple_file.write(str(num**3) + "\n")
 # Display the confirmation message
