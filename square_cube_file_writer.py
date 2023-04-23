@@ -3,6 +3,8 @@
 # containing the square of all even integers found in integers.txt and the second file will be 
 # named triple.txt containing the cube of all odd numbers found in the integers.txt.
 
+import pyfiglet
+import time
 
 # Open the input file and read the numbers
 with open("integers.txt", "r") as input_file:
@@ -10,14 +12,17 @@ with open("integers.txt", "r") as input_file:
 # Convert the numbers to integers
 numbers = [int(num) for num in numbers]
 
-with open("dounble.txt", "w") as double_file, open("triple.txt", "w") as triple_file:
-    double_file.("These are the squares of all even integers in the file:" + "\n")
+# Extract even and odd numbers
+even_numbers = [num for num in numbers if num % 2 == 0]
+odd_numbers = [num for num in numbers if num % 2 != 0]
+
+with open("double.txt", "w") as double_file, open("triple.txt", "w") as triple_file:
+    double_file.write("These are the squares of all even integers in the file:" + "\n")
     # Write the squares of even numbers to double.txt
-    for num in numbers:
-        if num % 2 == 0:
-            numbers = double_file.write(str(num**2) + "\n")
+    for num in even_numbers:
+        numbers = double_file.write(str(num**2) + "\n")
+    triple_file.write("These are the cubes of all odd integers in the file:" + "\n")
     # Write the cubes of odd number to odd.txt
-    for num in numbers:
-        if num % 2 != 0:
-            numbers = triple_file.write(str(num**3) + "\n")
+    for num in odd_numbers:
+        numbers = triple_file.write(str(num**3) + "\n")
 # Display the confirmation message
