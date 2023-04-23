@@ -27,6 +27,7 @@ pip3 install pyfiglet
 5. The program will read the numbers from the 'integers.txt' file and extract all even and odd numbers.
 6. The program will write the squares of even numbers to 'double.txt' and cubes of odd numbers to 'triple.txt' files.
 7. The program will provide a confirmation message that even and odd numbers have been written to their respective files.
+8. The program will close the file after writing.
 
 
 ## Contributing 
