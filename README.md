@@ -6,10 +6,11 @@ This program provides the following features:
 - Displays welcome message with program instructions using pyfiglet
 - Asks the user to press ENTER to run the program
 - Introduce a pause or delay
-- Reads a text file named integers.txt that contains 20 integers
+- Reads a text file named 'integers.txt' that contains 20 integers
 - Extracts all even and odd numbers from the file
 - Writes the squares of even numbers to 'double.txt' and cubes of odd numbers to 'triple.txt'
 - Provides a confirmation message that squares of all even and cubes of all odd numbers have been written to their respective files
+- Close the file after writing
 
 ## Installation
 This program requires Python 3 to be installed on your computer. If you don't have Python 3 installed, you can download it from the official website: https://www.python.org/downloads. To run the program, simply download and execute the 'extract_even_odd.py' and 'numbers.txt' file. To install the 'pyfiglet' package that is required you can use this pip:
