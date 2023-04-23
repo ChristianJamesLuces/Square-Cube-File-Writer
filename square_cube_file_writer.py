@@ -8,6 +8,7 @@
 with open("integers.txt", "r") as input_file:
     numbers = input_file.readlines()
 # Convert the numbers to integers
+numbers = [int(num) for num in numbers]
 # Extract even and odd numbers
 # Write the squares of even numbers to double.txt
 # Write the cubes odd number to odd.txt
