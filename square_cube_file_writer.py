@@ -9,7 +9,7 @@ import time
 intro = pyfiglet.figlet_format("WELCOME".center(39, "="), font = "digital")
 # Welcome message and its function
 print(intro)
-print("\033[44;1m" + "This program will create two text file, double.txt and triple.txt, that respectively contains the sqaures of all even numbers and the cubes of all odd numbers extracted from a file text named numbers.txt.\n" + "\033[0m")
+print("\033[44;1m" + "This program will create two text file, double.txt and triple.txt, that respectively contains the sqaures of all even and the cubes of all odd numbers extracted from a file text named numbers.txt.\n" + "\033[0m")
 input("Press the ENTER key to run the program....\n")
 time.sleep(5)
 # Open the input file and read the numbers
@@ -32,3 +32,6 @@ with open("double.txt", "w") as double_file, open("triple.txt", "w") as triple_f
     for num in odd_numbers:
         numbers = triple_file.write(str(num**3) + "\n")
 # Display the confirmation message
+print(":" * 120) 
+print("\033[93m" + "The sqaures of even and the cubes of odd numbers have been writen to double.txt and triple.txt responsively. :)".center(120) + "\033[0m")
+print(":" * 120)
