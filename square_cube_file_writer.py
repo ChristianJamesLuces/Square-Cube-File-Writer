@@ -6,6 +6,7 @@
 
 # Open the input file and read the numbers
 with open("integers.txt", "r") as input_file:
+    numbers = input_file.readlines()
 # Convert the numbers to integers
 # Extract even and odd numbers
 # Write the squares of even numbers to double.txt
